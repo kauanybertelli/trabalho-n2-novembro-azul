@@ -1,0 +1,200 @@
+/* Layout Geral */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fundo claro para contraste */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #007bff; /* Azul do Novembro Azul */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffdd57; /* Cor de destaque no hover */
+}
+
+/* Ícone de Notificações */
+.notificacao {
+    position: relative;
+}
+
+.notificacao img {
+    width: 24px;
+    height: 24px;
+}
+
+.notificacao .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4747; /* Cor para chamar atenção */
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Menu Lateral */
+aside {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: #0056b3; /* Azul escuro para contraste */
+    color: white;
+    padding-top: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+aside ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside ul li:hover {
+    background-color: #004091; /* Hover no item do menu */
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/* Cards de Estatísticas */
+.estatisticas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.estatisticas .card {
+    background-color: white;
+    width: 23%; /* Quatro cards por linha */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.estatisticas .card:hover {
+    transform: scale(1.05);
+}
+
+.estatisticas .card h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.estatisticas .card p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Lista de Atividades Recentes */
+.atividades-recentes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.atividades-recentes ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.atividades-recentes ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.atividades-recentes ul li span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ffdd57;
+}
